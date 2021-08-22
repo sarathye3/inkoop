@@ -1,0 +1,107 @@
+header{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+header button{
+    visibility: hidden;
+}
+header h3{
+    margin: 0px;
+    margin-left: 30px;
+    padding: 0;
+    font-size: xx-large;
+    font-weight: 900;
+}
+div{
+    margin:0;
+    display: grid;
+    grid-template-columns:1fr 4fr;
+}
+div nav{
+    margin-left: 0;
+    width: 100px;
+    height: 100%;
+}
+div nav ul li{
+    display: block;
+    margin: 40px;
+}
+div nav ul li a{
+    color: black;
+    padding-right: 5px;
+    text-decoration: none;
+    font-weight: 400;
+}
+div nav ul li a:hover{
+    color: rgba(240, 33, 67, 0.863);
+    text-decoration: line-through;
+}
+div nav ul li a.cart{
+    background-color: rgba(240, 33, 67, 0.863);
+    color: white;
+    border-radius: 20px;
+    padding: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+div section div.topHead{
+    display: grid;
+    grid-template-columns:4fr 2fr;
+}
+div section div.topHead h1{
+    margin-top: 0;
+    font-size: 70px;
+    font-weight: 900;
+}
+div section div.topHead div{
+    display: block;
+}
+div section div.topHead div p{
+    font-weight: 50;
+    width: 300px;
+    height: 40px;
+}
+div section div.topHead div hr{
+    margin-left: 0;
+    margin-top: 0; 
+    height: 1.5px;
+    width: 100px;
+    background-color: rgba(240, 33, 67, 0.863);
+}
+body div.cards {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+body div div.card{
+    width: 140px;
+    height: 180px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+body div div.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+body div div.card a img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+body div div.card a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    text-align: center;
+}
+
+
+@media only screen and (max-width:600px) {
+    header button{
+        visibility:visible;
+    }
+
+    header h3#mobhead{
+        visibility: hidden;
+    }
+}
