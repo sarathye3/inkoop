@@ -1,21 +1,16 @@
-header{
-    margin-top: 30px;
-    margin-left: 40px;
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
-header button{
-    visibility: hidden;
+.menu-mob{
+    display: none;
 }
-header h3{
+ h3{
     margin: 0px;
     margin-left: 30px;
     padding: 0;
     font-size: xx-large;
     font-weight: 900;
-}
-div{
-    margin:0;
-    display: grid;
-    grid-template-columns:1fr 4fr;
 }
 div nav{
     margin-left: 0;
@@ -44,24 +39,34 @@ div nav ul li a.cart{
     padding-left: 40px;
     padding-right: 40px;
 }
-div section div.topHead{
+#mob-para{
+    display: none;
+}
+.cart-mob{
+    display: none;
+}
+div.content{
+    display: grid;
+    grid-template-columns:1fr;
+}
+.content-text{
     display: grid;
     grid-template-columns:4fr 2fr;
 }
-div section div.topHead h1{
-    margin-top: 0;
+.content-text h1{
     font-size: 70px;
     font-weight: 900;
 }
-div section div.topHead div{
+.content-text div{
     display: block;
 }
-div section div.topHead div p{
+.content-text div p{
+    margin-top: 100px;
     font-weight: 50;
     width: 300px;
     height: 40px;
 }
-div section div.topHead div hr{
+.content-text div hr{
     margin-left: 0;
     margin-top: 0; 
     height: 1.5px;
@@ -76,6 +81,7 @@ body div div.card{
     width: 140px;
     height: 180px;
     box-sizing: border-box;
+    margin-right: 10px;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -94,14 +100,131 @@ body div div.card a {
     font-size: small;
     text-align: center;
 }
-
-
-@media only screen and (max-width:600px) {
-    header button{
-        visibility:visible;
+@media only screen and (max-width:600px) { 
+    body{
+        display: grid;
+        grid-template-columns: 1fr ;
     }
-
-    header h3#mobhead{
+    h3{
+        text-align: center;
+        padding-top: 20px;
+        margin: 0;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    div nav.navbar{
+        display:none;
+    }
+    div nav ul{
+        width: 100vw;
+        height: 350px;
+        background-color:rgba(0, 0, 0, 0.938) ;
+    position: relative;
+    top: -60px;    
+    }
+    div nav ul li{
+        text-align: center;
+    }
+    div nav ul li a{
+        font-size: larger;
+        font-weight: 700;
+        color: white;
+    }
+    .cart-mob{
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: -4rem;
+    }
+    .cart-mob img{
+        width: 50px;
+        height: 50px;
+    }
+    .menu-mob{
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        left: 1rem;
+        }
+        .menu-mob img{
+            width: 40px;
+            height: 40px;
+        }
+    div.content h3{
+        text-align: center;
+    }
+    div.content h1{
+        width:400px;
+        margin-left: 15px;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    div.sidebar h3#mobhead{
         visibility: hidden;
+    }
+    #web-para{
+        display: none;
+    }
+    #mob-para{
+        display: block;
+        margin-left: 15px;
+    }
+    div section div p{
+        font-weight: 50;
+        width: 300px;
+        height: 40px;
+    }
+    div p{
+        margin-top: 100px;
+        font-weight: 50;
+        width: 300px;
+        height: 40px;
+    }
+     div hr{
+        margin-left: 0;
+        margin-top: 0; 
+        height: 1.5px;
+        width: 100px;
+        background-color: rgba(240, 33, 67, 0.863);
+    }
+    div section div hr{
+        margin-left: 0;
+        margin-top: 0; 
+        height: 1.5px;
+        width: 20vw;
+        background-color: rgba(240, 33, 67, 0.863);
+    }
+    body div.cards {
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        width: 100vw;
+        height: 380px;
+        overflow: hidden;
+    }
+    body div div.card{
+        margin-left: 5px;
+        width: 140px;
+        height: 180px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
+    }
+    body div div.card:hover{
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    body div div.card a img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    body div div.card a {
+        text-decoration: none;
+        color: black;
+        font-size: small;
+        text-align: center;
     }
 }

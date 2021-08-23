@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lorem Ipsum</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
   </head>
   <body>
-    <header>
-      <button></button>
-      <h3>Lorem</h3>
+    <div class="sidebar">
+      <a href=""  onclick='document.getElementByClassName(".navbar").style.display="block"'>
+        <span class="menu-mob"
+          ><img src="./images/images (1).png" alt=""
+        /></span>
+      </a>
+      <h3>Lorem</h3><br>
       <h3 id="mobhead">Ipsum</h3>
-      <button></button>
-    </header>
-    <div>
-      <nav>
+      <a href="" class="taggle-cart">
+        <span class="cart-mob"
+          ><img src="./images/shopping-cart.png" alt=""
+        /></span>
+      </a>
+      <nav class="navbar">
         <ul>
           <li><a href="index.html">About</a></li>
           <li><a href="index.html">Services</a></li>
@@ -26,51 +33,60 @@
           <li><a class="cart" href="index.html">Cart</a></li>
         </ul>
       </nav>
-      <section>
-        <div class="topHead">
-          <h1>What are you<br />having for Lunch?</h1>
-          <div>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est modi
-              numquam optio blanditiis, minus deserunt ea nihil magni
-            </p><br>
-            <hr>
-          </div>
-        </div>
+    </div>
 
-        <div class="cards">
-          <div class="card">
-            <a href=""
-              ><img src="./images/mexican tacoo1.jpg" alt="" />
-              <h4>Mexican Taco</h4></a
-            >
-          </div>
-          <div class="card">
-            <a href=""
-              ><img src="./images/farmhouse pizza.jpg" alt="" />
-              <h4>Farmhouse Pizza</h4></a
-            >
-          </div>
-          <div class="card">
-            <a href=""
-              ><img src="./images/chicken_burger_264x282.jpg" alt="" />
-              <h4>Chicken Burger</h4></a
-            >
-          </div>
-          <div class="card">
-            <a href=""
-              ><img src="./images/loaded nachos.jpg" alt="" />
-              <h4>Loaded Nachos</h4></a
-            >
-          </div>
-          <div class="card">
-            <a href=""
-              ><img src="./images/hakka-noodles.jpg" alt="" />
-              <h4>Hakka Noodles</h4></a
-            >
-          </div>
+    <div class="content">
+      <div class="content-text">
+        <h1>What are you<br />having for Lunch?</h1>
+        <div id="web-para">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est modi
+            numquam optio blanditiis, minus deserunt ea nihil magni
+          </p>
+          <br />
+          <hr />
         </div>
-      </section>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <a href=""
+            ><img src="./images/mexican tacoo1.jpg" alt="" />
+            <h4>Mexican Taco</h4></a
+          >
+        </div>
+        <div class="card">
+          <a href=""
+            ><img src="./images/farmhouse pizza.jpg" alt="" />
+            <h4>Farmhouse Pizza</h4></a
+          >
+        </div>
+        <div class="card">
+          <a href=""
+            ><img src="./images/chicken_burger_264x282.jpg" alt="" />
+            <h4>Chicken Burger</h4></a
+          >
+        </div>
+        <div class="card">
+          <a href=""
+            ><img src="./images/loaded nachos.jpg" alt="" />
+            <h4>Loaded Nachos</h4></a
+          >
+        </div>
+        <div class="card">
+          <a href=""
+            ><img src="./images/hakka-noodles.jpg" alt="" />
+            <h4>Hakka Noodles</h4></a
+          >
+        </div>
+      </div>
+      <div id="mob-para">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est modi
+          numquam optio blanditiis, minus deserunt ea nihil magni
+        </p>
+        <br />
+        <hr />
+      </div>
     </div>
   </body>
 </html>
